@@ -1,0 +1,120 @@
+
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column; 
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: center;
+    background-color: teal;
+}
+header{
+    display: block;
+    position: relative;
+    width: 100%;    
+}
+
+.header{
+    display: flex;
+    /* flex-direction: row; */ /* por ahora no lo necesito */
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+    width: 100vw;
+    min-width: 900px;   
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.header .logo{
+    display: flex;
+    flex-shrink: 0;
+    margin: 0 10px;
+    /* border: 1px solid red; */
+}
+
+.header .logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 90px;
+    margin: 0 20px;
+}
+
+.header .logo h1{
+    /* padding-top: 10px; */
+    align-items: center;
+    text-decoration: underline;
+}
+.header .search{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 500px;
+    /* border: 1px solid red; */
+}
+
+.header .search input{
+    width: 60%;
+    height: 30px;
+    font-size: 1.2em;
+}
+
+.header .nav{
+    display: flex; 
+    position: relative;
+    /* border: 1px solid red; */
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.header .nav .navLinks a{
+    margin: 0px 10px;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+/* .btn{
+    display: block;
+    position: absolute;
+    left: 90px;
+    top: 42px;
+} */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items:flex-start; */
+    align-content: center;
+    background-color: rgb(127, 127, 127);
+    /* flex-shrink: 1; */
+    min-width: 900px;
+    max-width: 60vw;  
+    height: 800px;
+}
+.container h1{
+    font-size: 3em;
+}
+
+.container .items{
+    width: 90%;
+    height: 150px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+    background-color: azure;
+    border: 2px solid slateblue;
+}
+
+.container .items:last-child{
+    margin-bottom: 0;
+}
+
+.container .items p,
+.container .items a {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
