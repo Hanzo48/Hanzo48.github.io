@@ -59,9 +59,17 @@ header{
 
 .header .search input{
     text-align: center;
-    width:30%;
+    min-width:30%;
     height: 30px;
     font-size: 1.2em;
+    color: rgb(164, 164, 164);
+    padding: 5px 15px;
+    background-color: rgba(24, 23, 47, 0.982);
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    box-shadow: none;  
+
 }
 
 .header .nav{
@@ -105,8 +113,10 @@ header .nav .navLinks a:hover{
     justify-content: center;
     align-content: center;
     /* flex-shrink: 1; */
+    margin: 75px;
     min-width: 900px;
     max-width: 60vw;
+    border: 1px solid slateblue;
     padding-bottom: 25px;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -119,21 +129,29 @@ header .nav .navLinks a:hover{
 
 .container .items{
     width: 40%;
-    height: 150px;
+    /* height: 150px; */
     margin: 25px;
     text-align: center;
     padding: 15px;
     
     /* background-color: rgb(255, 255, 255); */
-    border: 2px solid slateblue;
+    border: 1px solid slateblue;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
-.container .items:last-child{
-    margin-bottom: 0;
+.container .items img{
+    max-width: 75%;
+    max-height: 75%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
 }
+
+/* .container .items:last-child{
+    margin-bottom: 0;
+} */
 
 .container .items p,
 .container .items a {
